@@ -1,0 +1,27 @@
+{{define "title"}}A templated page{{end}} {{define "body"}}
+<form action="/ascii-art" method="POST">
+  <div class="buttons">
+    <input
+      type="radio"
+      id="Standard"
+      name="artstyle"
+      value="standard"
+      checked
+    />
+    <label for="Standard">Standard</label><br />
+    <input type="radio" id="Shadow" name="artstyle" value="shadow" />
+    <label for="Shadow">Shadow</label><br />
+    <input type="radio" id="ThinkerToy" name="artstyle" value="thinkertoy" />
+    <label for="ThinkerToy">ThinkerToy</label><br />
+  </div>
+  <div class="textareagenerate">
+    <textarea id="UserText" name="text"></textarea>
+    <input type="submit" value="Generate" />
+  </div>
+
+  <!-- Display the generated ASCII art result -->
+</form>
+<div class="asciioutput">
+  <pre>{{.ASCIIArtResult}}</pre>
+</div>
+{{end}}

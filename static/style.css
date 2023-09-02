@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the form on the page */
+form {
+  margin: 0 auto;
+  width: 40%;
+  padding: 1em;
+  border: 3px solid #ccc;
+  border-radius: 1em;
+  background-color: white;
+}
+
+/* Uniform text field size */
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 100%; /* Use full width of the form */
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #999;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+}
+
+/* Additional highlight for focused elements */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* Align multiline text fields with their labels */
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+/* Center align header and footer */
+.asciiheader,
+.asciifooter {
+  text-align: center;
+  padding: 1em;
+  color: black;
+  background-color: white;
+}
+
+/* Set body background and text color */
+.asciibody {
+  background-color: black;
+  color: white;
+}
+
+/* Center align output */
+.asciioutput {
+  text-align: left;
+  overflow: auto;
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+  vertical-align: middle; /* Align radio button vertically with label */
+  margin-right: 0.5em; /* Add spacing between radio button and label */
+  margin-bottom: -30px; /* Adjust vertical alignment if needed */
+}
+
+/* Style radio button labels */
+label {
+  display: flex; /* Use flex layout for aligning items */
+  align-items: center; /* Center items vertically */
+}
+
+.error {
+  text-align: center;
+}

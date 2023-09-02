@@ -1,0 +1,24 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{template "title"}}</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+  <div class="asciiheader">
+    <h1>Ascii Art Generator</h1>
+  </div>
+  <body>
+    {{template "body" .}}
+  </body>
+  <div class="asciifooter">
+    <footer>
+    Made with Go <br>
+    By 0xncndev & glitvjak
+   </footer>
+   </div>
+   </body>
+</html>
+{{end}}
